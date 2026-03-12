@@ -5,10 +5,12 @@ import Papa from 'papaparse';
 import './index.css';
 
 // Public CSV Paths 
+const basePath = import.meta.env.BASE_URL;
+
 const DATA_PATHS = {
-  weibo: '/collab_report.csv',
-  youtube: '/yt_regional_stats.csv',
-  instagram: '/ig_collab_report.csv'
+  weibo: `${basePath}collab_report.csv`,
+  youtube: `${basePath}yt_regional_stats.csv`,
+  instagram: `${basePath}ig_collab_report.csv`
 };
 
 function App() {
